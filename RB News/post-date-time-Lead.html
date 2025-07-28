@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -44,7 +44,7 @@
      <!-- Tagify JS -->
      <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify@4.13.3/dist/tagify.min.js"></script>
     <!--CSS Link-->
-    <link rel="stylesheet" href="./assets/css/view-css/weekly-list.css">
+    <link rel="stylesheet" href="./assets/css/view-css/signature-list.css">
   </head>
   <body> 
     <!-- loader starts-->
@@ -152,7 +152,6 @@
                     <li><a href="signature-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Zodiac Sign List</a></li>
                   </ul>
                 </li>
-                
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                   <i class="fa fa-calendar text-white" aria-hidden="true"></i>
                     <span class="lan-4">Weekly Horoscope</span></a>
@@ -178,7 +177,6 @@
                     <li><a href="top-news.html"><i class="fa fa-angle-double-up text-white" aria-hidden="true"></i> Top News</a></li>
                   </ul>
                 </li>
-                
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                   <i class="fa fa-briefcase text-white" aria-hidden="true"></i>
                   <span class="lan-7">Property</span></a>
@@ -252,17 +250,17 @@
           <div class="container-fluid">
             <div class="page-title">
               <div class="row">
-                <div class="col-lg-6">
-                  <h4>Weekly Horoscope List</h4>
+                <div class="col-6">
+                  <h4>Post Date & Time Lead</h4>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-6">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">                                       
                         <svg class="stroke-icon">
                           <use href="./assets/svg/icon-sprite.svg#stroke-home"></use>
                         </svg></a></li>
-                    <li class="breadcrumb-item">Weekly Horoscope</li>
-                    <li class="breadcrumb-item active">Weekly Horoscope List</li>
+                    <li class="breadcrumb-item">ADS</li>
+                    <li class="breadcrumb-item active">Post Date & Time Lead</li>
                   </ol>
                 </div>
               </div>
@@ -291,10 +289,21 @@
                   <div class="card-body basic-wizard important-validation">
                     <div id="msform">
                       <form class="stepper-one row needs-validation custom-input" novalidate="">
-                        <div class="col-sm-6">
-                          <label class="form-label" for="zodic-sign">Zodiac Sign</label>
-                          <input class="selectMode w-100 rounded border" name="tags-select-value-mode" placeholder="Please Select Zodiac Sign" id="zodic-sign">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                          <label class="form-label" for="email-basic-wizard">Name</label>
+                          <input class="form-control digits w-100" type="text">
                         </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                          <label class="form-label" for="paymentStage">Payment Stage</label>
+                          <select class="form-select w-100" id="paymentStage" required>
+                            <option selected disabled value="">Select Stage</option>
+                            <option value="advance">Advance</option>
+                            <option value="partial">Partial</option>
+                            <option value="final">Final</option>
+                            <option value="pending">Pending</option>
+                          </select>
+                        </div>
+
                         <div class="wizard-footer mt-2 d-flex gap-2 justify-content-end">
                           <button class="btn btn-primary" type="submit">Search</button>
                           <button class="btn btn-dark" type="reset">Reset</button>
@@ -306,7 +315,7 @@
               </div>
               <!-- Filter Form end -->
             </div>
-            <div class="row ">
+            <div class="row">
               <!-- Daily Entry Table Start -->
               <div class="col-sm-12">
                 <div class="card">
@@ -317,62 +326,192 @@
                           <thead>
                             <tr class="bg-light">
                               <th scope="col" class="text-center">No</th>
-                              <th scope="col" class="text-center">From <i class="fa fa-sort opacity-25" aria-hidden="true"></i></th>
-                              <th scope="col" class="text-center">To <i class="fa fa-sort opacity-25" aria-hidden="true"></i></th>
-                              <th scope="col" class="text-center">Zodiac Sign <i class="fa fa-sort opacity-25" aria-hidden="true"></i></th>
-                              <th scope="col" class="text-center">Horoscope <i class="fa fa-sort opacity-25" aria-hidden="true"></i></th>
+                              <th scope="col" class="text-center">Name <i class="fa fa-sort opacity-25" aria-hidden="true"></i></th>
+                              <th scope="col" class="text-center">Stage</th>
+                              <th scope="col" class="text-center">Contact Number<i class="fa fa-sort opacity-25" aria-hidden="true"></i></th>
+                              <th scope="col" class="text-center">Amount</th>
                               <th scope="col" class="text-center">Action</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <th scope="row" class="text-center table-data">1</th>
-                              <td class="text-center table-data">01-10-2024</td>
-                              <td class="text-center table-data">05-10-2024</td>
-                              <td class="text-center table-data">Meen</td>
-                              <td class="description">
-                                  <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et sapiente nemo libero aperiam impedit, assumenda odio, modi aspernatur voluptatem, quasi exercitationem eum veritatis esse incidunt labore! Tempora modi officiis tempore?<span id="moreText" class="d-none">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi perferendis cupiditate veritatis facilis, maiores nihil tenetur unde et ipsum excepturi dolores dignissimos aperiam cumque dolorem culpa autem asperiores tempore laborum.
-                                  Consequuntur sequi animi esse iusto, obcaecati necessitatibus, ipsum molestiae laboriosam, cum delectus similique nam sunt officiis error exercitationem! Ducimus ipsum, consequatur rerum suscipit iste nobis officiis cumque aut? Facere, natus?
-                                  Unde nesciunt quos sit magnam accusantium neque, cupiditate ea deserunt nulla possimus aliquid quas ratione debitis molestias fugit eum non enim expedita voluptatem, in explicabo. Ipsum suscipit molestiae possimus error?</span><span type="button" class="text-primary" onclick="readMore(this)">...Read More</span></p></td>
-                              <td class="text-center col-fix table-data"> 
-                                <ul class="action d-flex justify-content-center"> 
-                                  <li class="edit"><a href="#" class="bg-success p-2 rounded  text-center"><i class="fa fa-pencil text-white" aria-hidden="true"></i></a></li>
-                                  <li class="delete"><a href="#" class="bg-danger p-2 rounded  text-center"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
-                                </ul>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row" class="text-center table-data">2</th>
-                              <td class="text-center table-data">01-10-2024</td>
-                              <td class="text-center table-data">05-10-2024</td>
-                              <td class="text-center table-data">Mesh</td>
-                              <td class="description">
-                                <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et sapiente nemo libero aperiam impedit, assumenda odio, modi aspernatur voluptatem, quasi exercitationem eum veritatis esse incidunt labore! Tempora modi officiis tempore?<span id="moreText" class="d-none text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi perferendis cupiditate veritatis facilis, maiores nihil tenetur unde et ipsum excepturi dolores dignissimos aperiam cumque dolorem culpa autem asperiores tempore laborum.
-                                Consequuntur sequi animi esse iusto, obcaecati necessitatibus, ipsum molestiae laboriosam, cum delectus similique nam sunt officiis error exercitationem! Ducimus ipsum, consequatur rerum suscipit iste nobis officiis cumque aut? Facere, natus?
-                                Unde nesciunt quos sit magnam accusantium neque, cupiditate ea deserunt nulla possimus aliquid quas ratione debitis molestias fugit eum non enim expedita voluptatem, in explicabo. Ipsum suscipit molestiae possimus error?</span><span type="button" class="text-primary" onclick="readMore(this)">...Read More</span></p></td>
-                              <td class="text-center col-fix table-data"> 
-                                <ul class="action d-flex justify-content-center"> 
-                                  <li class="edit"> <a href="#" class="bg-success p-2 rounded"><i class="fa fa-pencil text-white" aria-hidden="true"></i></a></li>
-                                  <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
-                                </ul>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row" class="text-center table-data">3</th>
-                              <td class="text-center table-data">01-10-2024</td>
-                              <td class="text-center table-data">05-10-2024</td>
-                              <td class="text-center table-data">Leo</td>
-                              <td class="description">
-                                <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et sapiente nemo libero aperiam impedit, assumenda odio, modi aspernatur voluptatem, quasi exercitationem eum veritatis esse incidunt labore! Tempora modi officiis tempore?<span id="moreText" class="d-none text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi perferendis cupiditate veritatis facilis, maiores nihil tenetur unde et ipsum excepturi dolores dignissimos aperiam cumque dolorem culpa autem asperiores tempore laborum.
-                                Consequuntur sequi animi esse iusto, obcaecati necessitatibus, ipsum molestiae laboriosam, cum delectus similique nam sunt officiis error exercitationem! Ducimus ipsum, consequatur rerum suscipit iste nobis officiis cumque aut? Facere, natus?
-                                Unde nesciunt quos sit magnam accusantium neque, cupiditate ea deserunt nulla possimus aliquid quas ratione debitis molestias fugit eum non enim expedita voluptatem, in explicabo. Ipsum suscipit molestiae possimus error?</span><span type="button" class="text-primary" onclick="readMore(this)">...Read More</span></p></td>
-                              <td class="text-center col-fix table-data"> 
-                                <ul class="action d-flex justify-content-center"> 
-                                  <li class="edit"> <a href="#" class="bg-success p-2 rounded"><i class="fa fa-pencil text-white" aria-hidden="true"></i></a></li>
-                                  <li class="delete"><a href="#" class="bg-danger p-2 rounded"><i class="fa fa-trash-o text-white" aria-hidden="true"></i></a></li>
-                                </ul>
-                              </td>
-                            </tr>
+                                <td class="text-center">1</td>
+                                <td class="text-center">Ravi Patel</td>
+                                <td class="text-center">Advance</td>
+                                <td class="text-center">+91 9876543210</td>
+                                <td class="text-center">₹15,000</td>
+                                  <td class="text-center">
+                                  <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <!-- Delete Button -->
+                                    <a href="#" class="btn btn-sm bg-warning text-white rounded" data-bs-toggle="tooltip" title="Change Status">
+                                      <i class="fa fa-toggle-on"></i>
+                                    </a>
+                                  
+                                    <!-- Dropdown Menu -->
+                                    <div class="dropdown">
+                                      <button class="btn btn-sm btn-outline-primary rounded-square" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-ellipsis-v"></i>
+                                      </button>
+                                      <ul class="dropdown-menu dropdown-menu-end shadow bg-white">
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-pencil me-2 text-success"></i>Edit</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-trash-o me-2 text-danger"></i>Delete</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-key me-2 text-warning"></i>Change Payment</a></li>
+                                        
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-exchange me-2 text-secondary"></i>Change Stage</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                          
+                              <tr>
+                                <td class="text-center">2</td>
+                                <td class="text-center">Neha Sharma</td>
+                                <td class="text-center">Partial</td>
+                                <td class="text-center">+91 9123456780</td>
+                                <td class="text-center">₹8,500</td>
+                                  <td class="text-center">
+                                  <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <!-- Delete Button -->
+                                    <a href="#" class="btn btn-sm bg-warning text-white rounded" data-bs-toggle="tooltip" title="Change Status">
+                                      <i class="fa fa-toggle-on"></i>
+                                    </a>
+                                  
+                                    <!-- Dropdown Menu -->
+                                    <div class="dropdown">
+                                      <button class="btn btn-sm btn-outline-primary rounded-square" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-ellipsis-v"></i>
+                                      </button>
+                                      <ul class="dropdown-menu dropdown-menu-end shadow bg-white">
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-pencil me-2 text-success"></i>Edit</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-trash-o me-2 text-danger"></i>Delete</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-key me-2 text-warning"></i>Change Payment</a></li>
+                                        
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-exchange me-2 text-secondary"></i>Change Stage</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                          
+                              <tr>
+                                <td class="text-center">3</td>
+                                <td class="text-center">Amit Mehta</td>
+                                <td class="text-center">Final</td>
+                                <td class="text-center">+91 9012345678</td>
+                                <td class="text-center">₹22,000</td>
+                                  <td class="text-center">
+                                  <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <!-- Delete Button -->
+                                    <a href="#" class="btn btn-sm bg-warning text-white rounded" data-bs-toggle="tooltip" title="Change Status">
+                                      <i class="fa fa-toggle-on"></i>
+                                    </a>
+                                  
+                                    <!-- Dropdown Menu -->
+                                    <div class="dropdown">
+                                      <button class="btn btn-sm btn-outline-primary rounded-square" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-ellipsis-v"></i>
+                                      </button>
+                                      <ul class="dropdown-menu dropdown-menu-end shadow bg-white">
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-pencil me-2 text-success"></i>Edit</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-trash-o me-2 text-danger"></i>Delete</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-key me-2 text-warning"></i>Change Payment</a></li>
+                                        
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-exchange me-2 text-secondary"></i>Change Stage</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                          
+                              <tr>
+                                <td class="text-center">4</td>
+                                <td class="text-center">Priya Desai</td>
+                                <td class="text-center">Pending</td>
+                                <td class="text-center">+91 9988776655</td>
+                                <td class="text-center">₹5,000</td>
+                                  <td class="text-center">
+                                  <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <!-- Delete Button -->
+                                    <a href="#" class="btn btn-sm bg-warning text-white rounded" data-bs-toggle="tooltip" title="Change Status">
+                                      <i class="fa fa-toggle-on"></i>
+                                    </a>
+                                  
+                                    <!-- Dropdown Menu -->
+                                    <div class="dropdown">
+                                      <button class="btn btn-sm btn-outline-primary rounded-square" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-ellipsis-v"></i>
+                                      </button>
+                                      <ul class="dropdown-menu dropdown-menu-end shadow bg-white">
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-pencil me-2 text-success"></i>Edit</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-trash-o me-2 text-danger"></i>Delete</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-key me-2 text-warning"></i>Change Payment</a></li>
+                                        
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-exchange me-2 text-secondary"></i>Change Stage</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                  <th scope="row" class="text-center">5</th>
+                                  <td class="text-center">Ravi Patel</td>
+                                  <td class="text-center">Pending</td>
+                                  <td class="text-center">+91 98765 43210</td>
+                                  <td class="text-center">₹12,000</td>
+                                    <td class="text-center">
+                                  <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <!-- Delete Button -->
+                                    <a href="#" class="btn btn-sm bg-warning text-white rounded" data-bs-toggle="tooltip" title="Change Status">
+                                      <i class="fa fa-toggle-on"></i>
+                                    </a>
+                                  
+                                    <!-- Dropdown Menu -->
+                                    <div class="dropdown">
+                                      <button class="btn btn-sm btn-outline-primary rounded-square" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-ellipsis-v"></i>
+                                      </button>
+                                      <ul class="dropdown-menu dropdown-menu-end shadow bg-white">
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-pencil me-2 text-success"></i>Edit</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-trash-o me-2 text-danger"></i>Delete</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-key me-2 text-warning"></i>Change Payment</a></li>
+                                        
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-exchange me-2 text-secondary"></i>Change Stage</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </td>
+                                </tr>                               
+
+                                <tr>
+                                  <th scope="row" class="text-center">6</th>
+                                  <td class="text-center">Neha Sharma</td>
+                                  <td class="text-center">Completed</td>
+                                  <td class="text-center">+91 91234 56789</td>
+                                  <td class="text-center">₹25,500</td>
+                                    <td class="text-center">
+                                  <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <!-- Delete Button -->
+                                    <a href="#" class="btn btn-sm bg-warning text-white rounded" data-bs-toggle="tooltip" title="Change Status">
+                                      <i class="fa fa-toggle-on"></i>
+                                    </a>
+                                  
+                                    <!-- Dropdown Menu -->
+                                    <div class="dropdown">
+                                      <button class="btn btn-sm btn-outline-primary rounded-square" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-ellipsis-v"></i>
+                                      </button>
+                                      <ul class="dropdown-menu dropdown-menu-end shadow bg-white">
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-pencil me-2 text-success"></i>Edit</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-trash-o me-2 text-danger"></i>Delete</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-key me-2 text-warning"></i>Change Payment</a></li>
+                                        
+                                        <li><a class="dropdown-item" href="#"><i class="fa fa-exchange me-2 text-secondary"></i>Change Stage</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </td>
+                                </tr>
                           </tbody>
                         </table>
                       </div>
@@ -457,14 +596,14 @@
     <script src="./assets/js/slick/slick.min.js"></script>
     <script src="./assets/js/slick/slick.js"></script>
     <script src="./assets/js/header-slick.js"></script>
-    <!-- calendar js
+    <!-- calendar js-->
     <script src="./assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
-    <script src="./assets/js/datatable/datatables/datatable.custom.js"></script> -->
+    <script src="./assets/js/datatable/datatables/datatable.custom.js"></script>
 
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="./assets/js/script.js"></script>
     <!-- customize js link -->
-     <script src="assets/view-js/weekly-list.js"></script>
+     <script src="assets/view-js/signature-list.js"></script>
   </body>
 </html>

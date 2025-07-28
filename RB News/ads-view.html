@@ -1,0 +1,401 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Customer Details - John Smith</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+        
+
+            .ads-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(10px);
+                border-radius: 20px;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+            }
+
+            .ads-subtitle {
+                font-size: 1.1em;
+                opacity: 0.9;
+                position: relative;
+                z-index: 1;
+            }
+
+            .ads-content {
+                padding: 40px;
+            }
+
+            .ads-section {
+                margin-bottom: 10px;
+                background: white;
+                border-radius: 15px;
+                padding: 15px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .ads-section-title {
+                font-size: 1.4em;
+                font-weight: 600;
+                color: #1f2937;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .ads-section-icon {
+                color: #4f46e5;
+                font-size: 1.2em;
+            }
+
+            .ads-info-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(246px, 1fr));
+                gap: 20px;
+            }
+
+            .ads-info-item {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .ads-label {
+                font-weight: 600;
+                color: #6b7280;
+                font-size: 0.9em;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            .ads-value {
+                font-size: 1.1em;
+                color: #1f2937;
+                font-weight: 500;
+            }
+
+            .ads-social-links {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+            }
+
+            .ads-social-icon {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                text-decoration: none;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .ads-social-icon:hover {
+                transform: scale(1.1);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            }
+
+            .ads-instagram {
+                background: linear-gradient(135deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+            }
+
+            .ads-facebook {
+                background: #1877f2;
+            }
+
+            .ads-status-badge {
+                display: inline-block;
+                padding: 8px 16px;
+                border-radius: 25px;
+                font-size: 0.9em;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            .ads-status-active {
+                background: #d1fae5;
+                color: #065f46;
+            }
+
+            .ads-status-pending {
+                background: #fef3c7;
+                color: #92400e;
+            }
+
+            .ads-status-completed {
+                background: #dbeafe;
+                color: #1e40af;
+            }
+
+            .ads-history-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 15px;
+            }
+
+            .ads-history-table th,
+            .ads-history-table td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #e5e7eb;
+            }
+
+            .ads-history-table th {
+                background: #f9fafb;
+                font-weight: 600;
+                color: #374151;
+                font-size: 0.9em;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            .ads-history-table tr:hover {
+                background: #f9fafb;
+            }
+
+            .ads-amount {
+                font-size: 1.3em;
+                font-weight: 700;
+                color: #059669;
+            }
+
+            .ads-address-block {
+                background: #f8fafc;
+                padding: 15px;
+                border-radius: 10px;
+                border: 1px solid #4f46e5;
+            }
+
+            @media (max-width: 768px) {
+                .ads-content {
+                    padding: 20px;
+                }
+                
+                .ads-info-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            .ads-payment-indicator {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                display: inline-block;
+                margin-right: 8px;
+            }
+
+            .ads-payment-paid {
+                background: #10b981;
+            }
+
+            .ads-payment-pending {
+                background: #f59e0b;
+            }
+
+            .ads-payment-overdue {
+                background: #ef4444;
+            }
+            .ads-two-col-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.ads-two-col-wrapper .ads-section {
+    flex: 1 1 calc(50% - 10px);
+}
+
+@media (max-width: 768px) {
+    .ads-two-col-wrapper .ads-section {
+        flex: 1 1 100%;
+    }
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="ads-container">
+            <div class="ads-content">
+                <!-- Customer Basic Information -->
+                <div class="ads-section">
+                    <h2 class="ads-section-title">
+                        <i class="fas fa-user ads-section-icon"></i>
+                        Customer Information
+                    </h2>
+                    <div class="ads-info-grid">
+                        <div class="ads-info-item">
+                            <span class="ads-label">Customer Name</span>
+                            <span class="ads-value">John Smith</span>
+                        </div>
+                        <div class="ads-info-item">
+                            <span class="ads-label">Contact Number</span>
+                            <span class="ads-value">+1 (555) 123-4567</span>
+                        </div>
+                        <div class="ads-info-item">
+                            <span class="ads-label">Requirement</span>
+                            <span class="ads-value">Digital Marketing Campaign</span>
+                        </div>
+                        <div class="ads-info-item">
+                            <span class="ads-label">Amount</span>
+                            <span class="ads-value ads-amount">$15,000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ads-two-col-wrapper">
+      <div class="ads-section">
+                    <h2 class="ads-section-title">
+                        <i class="fas fa-share-alt ads-section-icon"></i>
+                        Social Media
+                    </h2>
+                    <div class="ads-social-links">
+                        <a href="#" class="ads-social-icon ads-instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="ads-social-icon ads-facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+      <!-- Status and Stage -->
+                <div class="ads-section">
+                    <h2 class="ads-section-title">
+                        <i class="fas fa-tasks ads-section-icon"></i>
+                        Current Status
+                    </h2>
+                    <div class="ads-info-grid">
+                        <div class="ads-info-item">
+                            <span class="ads-label">Stage</span>
+                            <span class="ads-status-badge ads-status-active">In Progress</span>
+                        </div>
+                        <div class="ads-info-item">
+                            <span class="ads-label">Payment Status</span>
+                           <div>
+                             <span class="ads-payment-indicator ads-payment-paid"></span>
+                            <span class="ads-value">Paid</span>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+                <!-- Address Information -->
+                <div class="ads-section">
+                    <h2 class="ads-section-title">
+                        <i class="fas fa-map-marker-alt ads-section-icon"></i>
+                        Address Information
+                    </h2>
+                    <div class="ads-address-block">
+                        <div class="ads-info-grid">
+                            <div class="ads-info-item">
+                                <span class="ads-label">Address</span>
+                                <span class="ads-value">123 Business Street, Suite 456</span>
+                            </div>
+                            <div class="ads-info-item">
+                                <span class="ads-label">City</span>
+                                <span class="ads-value">New York</span>
+                            </div>
+                            <div class="ads-info-item">
+                                <span class="ads-label">State</span>
+                                <span class="ads-value">New York</span>
+                            </div>
+                            <div class="ads-info-item">
+                                <span class="ads-label">Country</span>
+                                <span class="ads-value">United States</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stage History -->
+                <div class="ads-section">
+                    <h2 class="ads-section-title">
+                        <i class="fas fa-history ads-section-icon"></i>
+                        Stage History
+                    </h2>
+                    <table class="ads-history-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Stage</th>
+                                <th>Remark</th>
+                                <th>Call Assign Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2024-01-15</td>
+                                <td><span class="ads-status-badge ads-status-completed">Initial Contact</span></td>
+                                <td>Customer inquiry received, requirements discussed</td>
+                                <td>2024-01-16</td>
+                            </tr>
+                            <tr>
+                                <td>2024-02-01</td>
+                                <td><span class="ads-status-badge ads-status-active">In Progress</span></td>
+                                <td>Project kicked off, initial work started</td>
+                                <td>2024-02-05</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Payment History -->
+                <div class="ads-section">
+                    <h2 class="ads-section-title">
+                        <i class="fas fa-credit-card ads-section-icon"></i>
+                        Payment History
+                    </h2>
+                    <table class="ads-history-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Payment Method</th>
+                                <th>Transaction ID</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2024-01-25</td>
+                                <td class="ads-amount">$7,500</td>
+                                <td>
+                                    <span class="ads-payment-indicator ads-payment-paid"></span>
+                                    Paid
+                                </td>
+                                <td>Bank Transfer</td>
+                                <td>TXN-123456789</td>
+                            </tr>
+                            <tr>
+                                <td>2024-02-15</td>
+                                <td class="ads-amount">$7,500</td>
+                                <td>
+                                    <span class="ads-payment-indicator ads-payment-pending"></span>
+                                    Pending
+                                </td>
+                                <td>Credit Card</td>
+                                <td>TXN-987654321</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/animate.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/select2.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/dropzone.css">
-    <link rel="stylesheet" href="./assets/css/view-css/add-news.css">
+    <link rel="stylesheet" href="./assets/css/view-css/add-property.css">
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="./assets/css/vendors/bootstrap.css">
@@ -161,7 +161,6 @@
                     <li><a href="weekly-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> Weekly Horoscope List</a></li>
                   </ul>
                 </li>
-
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                   <i class="fa fa-server text-white" aria-hidden="true"></i>
                     <span class="lan-6">News Category</span></a>
@@ -170,8 +169,6 @@
                     <li><a href="news-category-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> News Category List</a></li>
                   </ul>
                 </li>
-
-                
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                   <i class="fa fa-newspaper-o text-white" aria-hidden="true"></i>
                   <span class="lan-5">News</span></a>
@@ -181,7 +178,6 @@
                     <li><a href="top-news.html"><i class="fa fa-angle-double-up text-white" aria-hidden="true"></i> Top News</a></li>
                   </ul>
                 </li>
-               
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                   <i class="fa fa-briefcase text-white" aria-hidden="true"></i>
                   <span class="lan-7">Property</span></a>
@@ -208,7 +204,6 @@
                   <li><a href="user-list.html"><i class="fa fa-list text-white" aria-hidden="true"></i> User List</a></li>
                 </ul>
               </li>
-
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                 <i class="fa fa-file-text text-white" aria-hidden="true"></i>
                 <span class="lan-10">Details</span></a>
@@ -257,7 +252,7 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-6">
-                  <h4>Add Zodiac Sign</h4>
+                  <h4>Add ADS</h4>
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
@@ -265,8 +260,8 @@
                         <svg class="stroke-icon">
                           <use href="./assets/svg/icon-sprite.svg#stroke-home"></use>
                         </svg></a></li>
-                    <li class="breadcrumb-item">Zodiac Sign</li>
-                    <li class="breadcrumb-item active">Add Zodiac Sign</li>
+                    <li class="breadcrumb-item">ADSs</li>
+                    <li class="breadcrumb-item active">Add ADS</li>
                   </ol>
                 </div>
               </div>
@@ -275,77 +270,89 @@
           <!-- Container-fluid starts-->
           <div class="container-fluid">
             <div class="row">
-              <div class="col-12">
+              <div class="col-sm-12">
                 <div class="card">
                   <div class="card-body add-post">
                     <form class="needs-validation custom-input" novalidate="">
-                        <div class="row mb-3">
-                            <label class="form-label col-lg-2 col-md-4 col-sm-12 text-start my-2" for="zodiac-sign">Zodiac Sign<span class="txt-danger">*</span></label>
-                            <div class="col-lg-10">
-                              <input class="form-control w-100" type="text" placeholder="Enter Zodiac Sign Name" id="zodiac-sign">
-                            </div>
+                      <div class="row mb-3">
+                        <label class="form-label col-lg-2 col-md-4 col-sm-12 text-start my-2" for="Custimer-Name">Customer Name<span class="txt-danger">*</span></label>
+                        <div class="col-lg-10 col-md-12 col-sm-12">
+                          <input class="form-control w-100 rounded" type="text" value="" placeholder="Enter Custimer Name" required=""  id="Customer-Name">
                         </div>
-                        <div class="row mb-3">
-                          <label class="form-label col-lg-2 col-md-4 col-sm-12 text-start my-2" for="element">Element<span class="txt-danger">*</span></label>
-                          <div class="col-lg-10">
-                            <input class="form-control w-100" type="text" placeholder="Enter Element" id="element">
+                      </div>
+                        <div class="mb-3 row">
+                          <label for="Contact-Number" class="col-lg-2 col-md-4 col-sm-12 text-start my-2">Contact Number <span class="txt-danger">*</span></label>
+                          <div class="col-lg-10 col-md-12 col-sm-12">
+                            <input class="form-control w-100 " type="number" min="0.00" max="99999999.99" placeholder="Enter Contact Number"  id="Contact-Number"  required="">
+                          </div>
+                        </div>
+                        <div class="mb-3 row">
+                          <label for="Requirement" class="col-lg-2 col-md-4 col-sm-12 text-start my-2">Requirement <span class="txt-danger">*</span></label>
+                          <div class="col-lg-10 col-md-12 col-sm-12">
+                            <input class="form-control w-100 " type="text" min="0.00" max="99999999.99" placeholder="Enter Requirement"  id="Requirement"  required="">
                           </div>
                         </div>
                         <div class="row mb-3">
-                          <label class="form-label col-lg-2 col-md-4 col-sm-12 text-start my-2" for="ruling-planet">Ruling Planet<span class="txt-danger">*</span></label>
-                          <div class="col-lg-10">
-                            <input class="form-control w-100" type="text" placeholder="Enter Ruling Planet" id="ruling-planet">
+                          <label class="form-label col-lg-2 col-md-4 col-sm-12 text-start my-2" for="category">Stage<span class="txt-danger">*</span></label>
+                          <div class="col-lg-10 col-md-12 col-sm-12">
+                            <input class="selectMode rounded p-2 w-100 border" id="category" name="tags-select-value-mode" placeholder="Please Select Stage">
                           </div>
                         </div>
                         <div class="row mb-3">
-                          <label class="form-label col-lg-2 col-md-4 col-sm-12 text-start my-2" for="symbol">Symbol<span class="txt-danger">*</span></label>
-                          <div class="col-lg-10">
-                            <input class="form-control w-100" type="text" placeholder="Enter Symbol" id="symbol">
+                          <label for="Address" class="col-lg-2 col-md-4 mt-4 col-sm-6 text-start">Address</label>
+                          <div class="d-flex flex-column col-lg-10 col-md-12 col-sm-12"> 
+                            <textarea class="form-control border w-100" id="Address" rows="3"></textarea>
                           </div>
                         </div>
-                        <div class="row mb-3">
-                          <label for="imgInput" class="form-label col-lg-2 col-md-4 col-sm-12 text-start my-2">Zodiac Sign Image<span class="txt-danger">*</span></label>
-                          <div class="col-lg-10">
-                            <input class="form-control w-100 rounded" id="imgInput" type="file" required="">
-                            <div id="errorContainer mb-2"></div>
-                            <div id="imageContainer"></div>
-                          </div> 
-                        </div> 
-                        <div class="row mb-3">
-                          <label class="form-label col-lg-2 col-md-4 col-sm-12 text-start my-2" for="editor8">Zodiac Sign Description<span class="txt-danger">*</span></label>
-                          <div class="col-lg-10">
-                            <div class="toolbar-box">
-                              <div id="toolbar8"><span class="ql-formats">
-                                  <select class="ql-size">
-                                    <option value="small">Small</option>
-                                    <option selected="">Normal</option>
-                                    <option value="large">Large</option>
-                                    <option value="huge">Huge</option>
-                                  </select></span><span class="ql-formats">
-                                  <button class="ql-bold">Bold</button>
-                                  <button class="ql-italic">Italic</button>
-                                  <button class="ql-underline">Underline</button>
-                                  <button class="ql-strike">Strike</button>
-                                  <button class="ql-script" value="sub"></button>
-                                  <button class="ql-script" value="super"></button></span><span class="ql-formats">
-                                  <button class="ql-header" value="1"></button>
-                                  <button class="ql-header" value="2"></button></span><span class="ql-formats">
-                              </div>
-                              <div id="editor8"></div>
-                          </div>
+                         <div class="mb-3 row">
+                          <label for="Email" class="col-lg-2 col-md-4 col-sm-12 text-start my-2">Email <span class="txt-danger">*</span></label>
+                          <div class="col-lg-10 col-md-12 col-sm-12">
+                            <input class="form-control w-100 " type="email" min="0.00" max="99999999.99" placeholder="Enter Email"  id="Email"  required="">
                           </div>
                         </div>
-                        <div class="btn-showcase text-end">
-                          <button class="btn btn-primary" type="submit">Save</button>
-                          <button class="btn btn-dark" type="reset">Reset</button>
-                        </div> 
+                         <div class="mb-3 row">
+                          <label for="Amount " class="col-lg-2 col-md-4 col-sm-12 text-start my-2">Amount   <span class="txt-danger">*</span></label>
+                          <div class="col-lg-10 col-md-12 col-sm-12">
+                            <input class="form-control w-100 " type="text" min="0.00" max="99999999.99" placeholder="Enter Amount  "  id="Amount  "  required="">
+                          </div>
+                        </div>
+                      </div>
                     </form>
+                  </div>
+                  <h3 class="p-2">Social Media</h3>
+                   <div class="card">
+                  <div class="card-body add-post">
+                    <form class="needs-validation custom-input" novalidate="">
+                        <div class="mb-4 row align-items-end">
+                        
+                          <!-- Hospital Name -->
+                          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                            <label class="form-label" for="Facebook">Facebook</label>
+                            <input class="form-control w-100" type="text" id="Facebook" placeholder="Enter Facebook" required>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                            <label class="form-label" for="Instagram">Instagram</label>
+                            <input class="form-control w-100" type="text" id="Instagram" placeholder="Enter Instagram" required>
+                          </div>
+                        </div>
+                      </form>
                   </div>
                 </div>
               </div>
+              <div class="btn-showcase text-center">
+                          <button class="btn btn-primary" type="submit">Save</button>
+                          <!-- <button class="btn btn-dark" type="reset">Reset</button> -->
+                        </div>
             </div>
+            
           </div>
         </div>
+          <!-- Container-fluid Ends-->
+      </div>
+      <!-- Modal -->
+       <div id="modal-container">
+
+       </div> 
         <!-- footer start-->
         <footer class="footer">
           <div class="container-fluid">
@@ -388,15 +395,20 @@
     <script src="./assets/js/dropzone/dropzone.js"></script>
     <script src="./assets/js/dropzone/dropzone-script.js"></script>
 
-    <script src="./assets/js/select2/select2-custom.js"></script>
+    <!-- <script src="./assets/js/select2/select2-custom.js"></script> -->
     <script src="./assets/js/editors/quill.js"></script>
-    <!-- <script src="./assets/js/custom-add-product4.js"></script> -->
+    <script src="./assets/js/custom-add-product4.js"></script>
     <!-- <script src="./assets/js/form-validation-custom.js"></script> -->
     <!-- <script src="./assets/js/select2/custom-inputsearch.js"></script> -->
     <!-- Plugins JS Ends-->
-    <!-- Theme js-->
+    <!-- Theme js-->  
+    <!-- <script src="script.js"></script> -->
     <script src="./assets/js/script.js"></script>
-    <script src="assets/view-js/add-signature.js"></script>
     <!-- <script src="./assets/js/theme-customizer/customizer.js"></script> -->
+     <!-- custom js -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="./assets/view-js/add-property.js"></script>
   </body>
 </html>

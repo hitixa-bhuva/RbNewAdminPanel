@@ -49692,3 +49692,19 @@ html[dir=rtl] body.dark-only .page-wrapper .page-body-wrapper .page-body .card:n
   5.9 Box-layout CSS Ends
 ==========================**/
 /*# sourceMappingURL=style.css.map */
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+      display: flex;
+      align-items: center;
+    }
+    .select2-container--default .select2-results__option {
+      display: flex;
+      align-items: center;
+    }
+    .select2-container--default .select2-selection--single {
+      height: 40px;
+      padding: 5px;
+    }
+    .select2-img-option img {
+      margin-right: 10px;
+      border-radius: 4px;
+    }
