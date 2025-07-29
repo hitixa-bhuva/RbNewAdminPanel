@@ -213,7 +213,7 @@
                 </ul>
               </li>
               <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
-                  <i class="fa fa-file-text text-white" aria-hidden="true"></i>
+                  <i class="fa fa-hospital-o text-white" aria-hidden="true"></i>
                   <span class="lan-10">Hospitals</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="add-Hospitals.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add Hospitals</a></li>
@@ -221,7 +221,7 @@
                   </ul>
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
-                  <i class="fa fa-file-text text-white" aria-hidden="true"></i>
+                  <i class="fa fa-bullhorn text-white" aria-hidden="true"></i>
                   <span class="lan-10">ADS</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="add-ads.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add ads</a></li>
@@ -235,7 +235,7 @@
                   </ul>
                 </li>
                 <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
-                  <i class="fa fa-file-text text-white" aria-hidden="true"></i>
+                  <i class="fa fa-home text-white" aria-hidden="true"></i>
                   <span class="lan-10">Real Estate</span></a>
                   <ul class="sidebar-submenu">
                     <li><a href="add-Real-Estate.html"><i class="fa fa-plus-square text-white" aria-hidden="true"></i> Add Real Estate</a></li>
@@ -293,13 +293,13 @@
                           </div>
                         </div>
                         <div class="mb-3 row">
-                          <label for="Category" class="col-lg-2 col-md-4 col-sm-12 text-start my-2">Category<span class="txt-danger">*</span></label>
+                          <label for="Category" class="col-lg-2 col-md-4 col-sm-12 text-start my-2">Category</label>
                           <div class="col-lg-10 col-md-12 col-sm-12">
                             <input class="form-control w-100 " type="number" min="0.00" max="99999999.99" placeholder="Enter Category"  id="Category"  required="">
                           </div>
                         </div>
                         <div class="mb-3 row">
-                          <label for="main-image" class="col-lg-2 col-md-4 col-sm-12 text-start my-2">Image</label>
+                          <label for="main-image" class="col-lg-2 col-md-4 col-sm-12 text-start my-2">Image<span class="txt-danger">*</span></label>
                           <div class="col-lg-10 col-md-12 col-sm-12">
                             <input class="form-control w-100 rounded" type="file" required="" alt="Image" onchange="previewImage(this)" id="main-image">
                             <div id="imageContainer" class="mt-3"></div>
@@ -328,14 +328,14 @@
                           </div>
                         
                           <!-- Sequence -->
-                          <div class="col-lg-5 col-md-5 col-sm-12 mb-3">
+                          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                             <label class="form-label" for="ServicesSequence">Sequence </label>
                             <input class="form-control w-100" type="number" id="ServicesSequence" placeholder="Enter Sequence" required>
                           </div>
                         
                           <!-- Add Button -->
-                          <div class="col-lg-2 col-md-2 col-sm-12 mb-3 d-flex align-items-end justify-content-center">
-                            <button class="btn btn-primary w-100" type="button" onclick="DisplayData()">Add</button>
+                          <div class="col-lg-1 col-md-1 col-sm-12 mb-3 d-flex align-items-end justify-content-center">
+                            <button class="btn btn-primary " type="button" onclick="DisplayData()">Add</button>
                           </div>
                         </div>
                       
@@ -371,14 +371,14 @@
                            </div>
                         
                           <!-- Sequence -->
-                          <div class="col-lg-5 col-md-5 col-sm-12 mb-3">
+                          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                             <label class="form-label" for="imageSequence">Sequence </label>
                             <input class="form-control w-100" type="number" id="imageSequence" placeholder="Enter Sequence" required>
                           </div>
                         
                           <!-- Add Button -->
-                          <div class="col-lg-2 col-md-2 col-sm-12 mb-3 d-flex align-items-end justify-content-center">
-                            <button class="btn btn-primary w-100" type="button" onclick="DisplayData()">Add</button>
+                          <div class="col-lg-1 col-md-1 col-sm-12 mb-3 d-flex align-items-end justify-content-center">
+                            <button class="btn btn-primary  " type="button" onclick="DisplayData()">Add</button>
                           </div>
                         </div>
                       
@@ -414,13 +414,13 @@
                             <label class="form-label" for="doctorDegree">Degree </label>
                             <input class="form-control w-100" type="number" id="doctorDegree" placeholder="Enter Degree" required>
                           </div>
-                          <div class="col-lg-3 col-md-5 col-sm-12 mb-3">
+                          <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
                             <label class="form-label" for="doctorSequence">Sequence</label>
                             <input class="form-control w-100" type="number" id="doctorSequence" placeholder="Enter Doctor" required>
                           </div>
                           <!-- Add Button -->
-                          <div class="col-lg-2 col-md-2 col-sm-12 mb-3 d-flex align-items-end justify-content-center">
-                            <button class="btn btn-primary w-100" type="button" onclick="DisplayData()">Add</button>
+                          <div class="col-lg-1 col-md-1 col-sm-12 mb-3 d-flex align-items-end justify-content-center">
+                            <button class="btn btn-primary " type="button" onclick="DisplayData()">Add</button>
                           </div>
                         </div>
                       
@@ -448,19 +448,19 @@
                   <div class="card-body add-post">
                     <form class="needs-validation custom-input" novalidate="">
                         <div class="mb-4 row align-items-end">
-                          <div class="col-lg-3 col-md-5 col-sm-12 mb-3">
+                          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                             <label class="form-label" for="otherdetailsEmail">Email </label>
                             <input class="form-control w-100" type="email" id="otherdetailsEmail" placeholder="Enter Email" required>
                           </div>
-                          <div class="col-lg-3 col-md-5 col-sm-12 mb-3">
+                          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                             <label class="form-label" for="otherdetailsWebsite">Website </label>
                             <input class="form-control w-100" type="url" id="otherdetailsWebsite" placeholder="Enter Website" required>
                           </div>
-                          <div class="col-lg-3 col-md-5 col-sm-12 mb-3">
+                          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                             <label class="form-label" for="Instagram">Instagram</label>
                             <input class="form-control w-100" type="text" id="Instagram" placeholder="Enter Instagram" required>
                           </div>
-                          <div class="col-lg-3 col-md-5 col-sm-12 mb-3">
+                          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
                             <label class="form-label" for="Facebook">Facebook</label>
                             <input class="form-control w-100" type="text" id="Facebook" placeholder="Enter Facebook" required>
                           </div>
@@ -470,13 +470,13 @@
                       </div>
                       
                       </form>
+                      <div class="btn-showcase text-center ">
+                      <button class="btn btn-primary" type="submit">Save</button>
+                      <button class="btn btn-dark" type="reset">Reset</button>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="btn-showcase text-center">
-                          <button class="btn btn-primary" type="submit">Save</button>
-                          <button class="btn btn-dark" type="reset">Reset</button>
-                        </div>
             </div>
             
           </div>
