@@ -286,6 +286,23 @@
                             <input class="form-control w-100 " type="number" min="0.00" max="99999999.99" placeholder="Enter Contact Number"  id="Contact-Number"  required="">
                           </div>
                         </div>
+                      <div class="row mb-3">
+                        <label class="form-label col-lg-2 col-md-4 col-sm-12 text-start my-2" for="category">
+                          Category 
+                        </label>
+                        <div class="col-lg-10 col-md-12 col-sm-12">
+                          <select class="form-control rounded p-2 w-100 border" id="category" name="category" required>
+                            <option value="" disabled selected>Please Select Category</option>
+                            <option value="imagesharing">Image Sharing</option>
+                            <option value="reels">Reels</option>
+                            <option value="video">Videos</option>
+                            <option value="articals">Articals Ads</option>
+                            <option value="Outdoor">Web Outdoor Patti</option>
+                            <option value="poster">Web Poster Ads</option>
+                          </select>
+                        </div>
+                      </div>
+
                         <div class="mb-3 row">
                           <label for="Requirement" class="col-lg-2 col-md-4 col-sm-12 text-start my-2">Requirement <span class="txt-danger">*</span></label>
                           <div class="col-lg-10 col-md-12 col-sm-12">
@@ -293,11 +310,21 @@
                           </div>
                         </div>
                         <div class="row mb-3">
-                          <label class="form-label col-lg-2 col-md-4 col-sm-12 text-start my-2" for="category">Stage<span class="txt-danger">*</span></label>
-                          <div class="col-lg-10 col-md-12 col-sm-12">
-                            <input class="selectMode rounded p-2 w-100 border" id="category" name="tags-select-value-mode" placeholder="Please Select Stage">
-                          </div>
+                        <label class="form-label col-lg-2 col-md-4 col-sm-12 text-start my-2" for="Stage">
+                          Stage 
+                        </label>
+                        <div class="col-lg-10 col-md-12 col-sm-12">
+                          <select class="form-control rounded p-2 w-100 border" id="Stage" name="Stage" required>
+                            <option value="" disabled selected>Please Select Stage</option>
+                            <option value="inquiey">Inquiey</option>
+                            <option value="shooting">Shooting Date</option>
+                            <option value="edinding">Edinding</option>
+                            <option value="client">Client Approval</option>
+                            <option value="post">Post Date</option>
+                            <option value="payment">Payment</option>
+                          </select>
                         </div>
+                      </div>
                         <div class="row mb-3">
                           <label for="Address" class="col-lg-2 col-md-4 mt-4 col-sm-6 text-start">Address</label>
                           <div class="d-flex flex-column col-lg-10 col-md-12 col-sm-12"> 
